@@ -35,12 +35,22 @@ function displayCart() {
     var desc = document.createElement("p");
     desc.className = "description";
     desc.innerHTML = cartArray[i].description;
+    desc.style.display = "none";
     wordSection.appendChild(desc);
+
+    var dPrice = document.createElement("div");
+    dPrice.className = "dPrice";
+    itemDiv.appendChild(dPrice);
+
+   var dollarSign = document.createElement("p");
+    dollarSign.className = "dollar";
+    dollarSign.innerHTML = "$";
+    dPrice.appendChild(dollarSign);
 
     var price = document.createElement("p");
     price.className = "price";
     price.innerHTML = cartArray[i].price;
-    itemDiv.appendChild(price);
+    dPrice.appendChild(price);
 
     
     shoppingCart.appendChild(itemDiv); //append it to shoppingList
@@ -76,7 +86,6 @@ for(var i = 0; i < getCartItems.length;i++) {
   //console.log(i);
 }
 
-console.log(getCartItems);
 
 function showDesc() {
   var desc = this.querySelectorAll(".description")[0];

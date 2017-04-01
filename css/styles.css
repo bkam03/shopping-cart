@@ -5,6 +5,11 @@ body {
 header {
   background-color: orange;
   display: flex;
+  padding-left: 15px;
+}
+#title {
+  margin-left: 15px;
+  opacity: .5;
 }
 
 #centerColumn {
@@ -13,6 +18,50 @@ header {
   margin: auto;
 }
 
-.description {
-  display: none;
+#theCart {
+  padding: 75px;
+  padding-top: 60px;
+ }
+
+.thumbnail {
+  height: 75px;
+  width: 75px;
+}
+
+
+
+
+.cartItem {
+  display: flex;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items:center;
+  justify-content: space-between;;
+}
+
+.general {
+flex-grow: 4;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.dPrice {
+  display: flex;
+  font-size: 18px;
+} 
+
+
+
+
+#subtotal {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+
+}
+
+.product, #sTotal {
+  font-weight: bold;
+  font-size: 20px;
 }
